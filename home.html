@@ -1,83 +1,108 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Project Home Page Template</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<style type="text/css">
-		nav {
-			height: 50px;
-			background: gray;
-			font-size: 1.5em;
-			color: white;
-		}
-		.menu_header {
-			display: inline;
-		}
-		.menu .menu_header img {
-			width: 20px;
-			height: 20px;
-		}
-		.menu .menu_header p {
-			display: inline;
-		}
-		.menu ul {
-			position: relative;
-			float: right;
-			display: inline;
-			border:1px solid black;
-			width: 80%;
-			height: 100%;
-			list-style: none;
-		}
-		.menu ul li {
-			position: relative;
-			float: left;
-			display: inline;
-			padding: 10px;
-			padding-left: 15px;
-			padding-right: 15px;  
-			border: 1px solid white;								
-			margin: 5px;
-		}
-		li a {
-			color: white;
-			text-decoration: none;			
-		}
-	</style>
+	<link href="css/style_2.css" rel="stylesheet">
 </head>
 <body>
-<nav class="menu">
-	<div class="menu-open"></div>
-	<div class="menu_header">
-		<img src="">		
-	</div>
-	<ul class="bottom_menu">
-		<li class="menu_item">			
-			<a href="#"> Item</a>
-		</li>
-		<li class="menu_item">			
-			<a href="#"> Item Item Item</a>
-		</li>
-		<li class="menu_item">			
-			<a href="#"> Item</a>
-		</li>
-		<li class="menu_item">			
-			<a href="#"> Item</a>
-		</li>
-		<li class="menu_item">			
-			<a href="#"> Item</a>
-		</li>
-	</ul>
+
+<nav class="cn navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-screenshot"></span></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
 </nav>
+<div class="box col-lg-1 col-sm-1">
 
+</div>
+<div  class="container-fluid col-lg-11 col-sm-11">
+	<div id="masonry" class="post-box col-lg-8 col-sm-8">
+		<div class="post">
 
+		</div>
+		<div class="post" style="height: 350px;">
+
+		</div>
+		<div class="post">
+
+		</div>
+		<div class="post" style="height: 350px;">
+
+		</div>
+
+		<div class="post">
+
+		</div>
+		<div class="post" style="height: 350px;">
+
+		</div>
+		<div class="post" style="height: 350px;">
+
+		</div>
+
+		<div class="post">
+
+		</div>
+	</div>
+	<div class="box col-lg-4 col-sm-4">
+
+	</div>
+</div>
 	<script src="js/jquery-3.0.0.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/index.js"></script>
+	<script src='js/masonry.pkgd.min.js'></script>
 	<script type="text/javascript">
-		$(document).ready(function () {
-			//alert();
-		});
+	var container = document.querySelector('#masonry');
+    var masonry = new Masonry(container, {
+      columnWidth: 15,
+      itemSelector: '.post'
+    });
 	</script>
 </body>
 </html>
