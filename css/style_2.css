@@ -99,7 +99,6 @@
   }
 }
 
-/*CSS STYLE FOR OTHER */
 .box {
   background: #ccc;
   height: 550px;
@@ -130,9 +129,15 @@
 @media screen and (max-width: 992px) and (min-width: 768px) {
   .post {
     width: 85%;
+    margin-bottom: 25px;
+    margin-left: 7.50%;
   }
 }
 
 @media screen and (max-width: 768px) {
-
+  .post {
+    width: 90%;
+    margin-bottom: 25px;
+    margin-left: 5%;
+  }
 }
