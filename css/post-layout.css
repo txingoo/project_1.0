@@ -38,7 +38,7 @@ a:active ,a:focus, a:visited{
 }
 .post-readmore .readmore {
   position: relative;
-  background: #555657;
+  background: #556270;
   border-radius: 0 4px 0 0;
   border-right: 8px solid rgba(0, 0, 0, 0.15);
   color: #f2f2f2;
