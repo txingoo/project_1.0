@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 	<link href="css/style_2.css" rel="stylesheet">
 	<link href="css/post-layout.css" rel="stylesheet">
+	<link href="css/menu-layout.css" rel="stylesheet">
 </head>
 <body>
 
@@ -59,6 +60,8 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+
+
 <div class="menu-side col-lg-1 col-sm-1">
 	<div class="menu-side-toggle"></div>
 	<ul>
@@ -264,6 +267,7 @@
 			}
 	}
 	$(".scroll-up-button").on("click",function (){
+		$(".scroll-up-button-on").addClass("scroll-up-button-off");
 		$("html, body").animate({ scrollTop: 0 }, "slow");
   	return false;
 	});
