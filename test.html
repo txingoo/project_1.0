@@ -194,6 +194,27 @@
         });
         var flag = 'a';
         var count = 0;
+        var acount = 0;
+        $('html').click(function (e) {
+          if(gl !=1)
+          {
+            acount++;
+          }
+          if(acount > 1)
+          {
+            if($(e.target).closest('.main-menu').length>0)
+            {
+              return false;
+            }
+            //code to close menu here this will only execute when click event occur on body apart from  menu
+            $(".main-menu").slideUp();
+            gl = 1;
+            $(".menu-text").hide();
+            $(".item").attr("style","width: auto;");
+            acount = 0;
+          }
+
+        });
         $(".dropdown").click(function (e) {
           //a=$(this).attr("class");
           //alert(a);
