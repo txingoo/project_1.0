@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Menu</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <style media="screen">
+      body {
+        margin: 0px;
+        padding: 0px;
+        background-color: #eee;
+      }
+      .menu {
+        position: relative;
+        width: 100%;
+        height: 60px;
+        background: #fff;
+        color: #02c1d6;
+      }
+      .menu-open-tag {
+        position: relative;
+        float: left;
+        width: 60px;
+        height: 100%;
+        background: #fff;
+        padding: 10px;
+        border-right: 1px solid  	rgba(0, 0, 0, 0.1);
+      }
+      .menu-open-tag span {
+        font-size: 2.5em;
+      }
+      .menu-brand {
+        position: relative;
+        float: left;
+        height: 100%;
+        background: #fff;
+        padding: 10px;
+        border-right: 1px solid  	rgba(0, 0, 0, 0.1);
+      }
+      .menu-brand span {
+        font-size: 2.5em;
+      }
+      .menu-search-bar {
+        border: 1px solid blue;
+        height: 100%;
+        padding-top: 10px;
+      }
+      .main-menu {
+        display: none;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: auto;
+        height: 100%;
+        overflow: auto;
+        color: #02c1d6;
+        background: #fff;
+      }
+      .main-menu .menu-item {
+        list-style: none;
+        padding: 0px;
+      }
+      .main-menu .menu-item a {
+        color: #02c1d6;
+        text-decoration: none;
+      }
+      .main-menu .menu-item li:hover a {
+        color: #fff;
+      }
+      .main-menu .menu-item li{
+        height: auto;
+        background: white;
+        color: #02c1d6;
+      }
+      .main-menu .menu-item li:hover{
+        background: #02c1d6;
+      }
+      .main-menu .menu-item ul {
+        display: none;
+        list-style: none;
+        padding: 0;
+        height: auto;
+      }
+      .main-menu .menu-item li {
+        height: 60px;
+        font-size: 15pt;
+        border-top: 1px solid rgba(0,0,0,.10);
+      }
+      .menu-style {
+        width: 300px;
+      }
+      .main-menu .menu-item li .menu-text {
+        display: none;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+      }
+      .main-menu .menu-item li .icon {
+        padding: 15px;
+        font-size: 20pt;
+        height: 100%;
+      }
+      .main-menu .menu-item li .icon {
+        top: -1px;
+        height: 101%;
+      }
+      .main-menu .menu-item li .icon:hover {
+        background: #02c1d6;
+      }
+      .dropdown {
+        position: absolute;
+        width: 100%;
+      }
+      /*.main-menu .menu-item li .icon{
+        position: relative;
+        padding: 12px;
+        font-size: 2em;
+        height: 60px;
+      }
+      .main-menu .menu-item li .menu-text {
+        position: absolute;
+        color: Black;
+        font-size: 1.5em;
+        width: 240px;
+        height: 61px;
+        top: -1px;
+        left: 60px;
+        border-top: 1px solid #b9c;
+        background-color: #bcd;
+        padding: 12px;
+      }
+      .main-menu .menu-item li:hover {
+        background: blue;
+      }*/
+    </style>
+  </head>
+  <body>
+    <div class="menu">
+      <div class="menu-open-tag">
+        <span class=" glyphicon glyphicon-option-horizontal"></span>
+      </div>
+      <div class="menu-brand">
+        <span class="glyphicon glyphicon-subscript"></span>
+      </div>
+      <div class="main-menu">
+        <ul class="menu-item">
+          <li class="item"><a href="#"><span class="icon glyphicon glyphicon-search"></span><span class="menu-text">Search</span></a></li>
+          <li class="item"><a class="dropdown" id="modal1" href="#"><span class="icon glyphicon glyphicon-download-alt"></span><span class="menu-text">Download <span class="glyphicon glyphicon-plus"></span></span></a></li>
+          <ul class="modal1 dropdown-item">
+            <li><a href="#"><span class="icon glyphicon glyphicon-download-alt"></span><span class="menu-text">Download</span></a></li>
+            <li><a href="#"><span class="icon glyphicon glyphicon-download-alt"></span><span class="menu-text">Download</span></a></li>
+            <li><a href="#"><span class="icon glyphicon glyphicon-download-alt"></span><span class="menu-text">Download</span></a></li>
+          </ul>
+          <li class="item"><a href="#"><span class="icon glyphicon glyphicon-home"></span><span class="menu-text">Home</span></a></li>
+          <li class="item"><a class="dropdown" id="modal2" href="#"><span class="icon glyphicon glyphicon-download-alt"></span><span class="menu-text">Download <span class="glyphicon glyphicon-plus"></span></span></a></li>
+          <ul class="modal2 dropdown-item">
+            <a href="#"><li><span class="icon glyphicon glyphicon-download-alt"></span><span class="menu-text">Downldad</span></li></a>
+            <li><a href="#"><span class="icon glyphicon glyphicon-download-alt"></span><span class="menu-text">Download</span></a></li>
+            <li><a href="#"><span class="icon glyphicon glyphicon-download-alt"></span><span class="menu-text">Download</span></a></li>
+          </ul>
+          <li class="item"><a href="#"><span class="icon glyphicon glyphicon-cog"></span><span class="menu-text">Settings</span></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  	<script src="js/bootstrap.min.js"></script>
+  	<script src='js/masonry.pkgd.min.js'></script>
+  	<script src="js/index.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      var  gl = 1;
+      $(document).ready(function () {
+        $(".menu-open-tag").click(function () {
+          if( gl == 1) {
+              //$(".main-menu").attr("style","display: block;");
+              $(".main-menu").fadeIn();
+              gl=0;
+          }
+          else if(gl == 0) {
+              //$(".main-menu").attr("style","display: none;");
+              //$(".main-menu").animate({opacity: "0",transformX: '-400px'},"slow");
+              $(".main-menu").slideUp();
+              gl = 1;
+              $(".menu-text").hide();
+              $(".item").attr("style","width: auto;");
+          }
+        });
+        $(".item").mouseover(function () {
+          $(".item").attr("style","width: 300px;");
+          $(".menu-text").fadeIn();
+        });
+        var flag = 'a';
+        var count = 0;
+        $(".dropdown").click(function (e) {
+          //a=$(this).attr("class");
+          //alert(a);
+          if(flag=='a' && count ==0) {
+            a = $(this).attr("id");
+            //a="modal1"
+            //alert(a);
+            $("."+a).attr("style","width:300px;");
+            $("."+a).slideDown();
+            flag='.'+a;
+            count++;
+          }
+          else if(count>0) {
+            //alert(x);
+            a = $(this).attr("id");
+            //a = $(e.target).find("a").attr("id");
+            //a = $(e.target).parent().attr("id");
+            if(flag == '.'+a) {
+              $("."+a).attr("style","display: none;");
+              $("."+a).slideUp();
+              flag='a';
+              count-- ;
+            }
+            else {
+              $(flag).attr("style","display: none;");
+              $(flag).slideUp();
+              flag='a';
+              count-- ;
+              a = $(this).attr("id");
+              //a = $(e.target).find("a").attr("id");
+              //a = $(e.target).parent().attr("id");
+              $("."+a).attr("style","width:300px;");
+              $("."+a).slideDown();
+              flag='.'+a;
+              count++;
+            }
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
