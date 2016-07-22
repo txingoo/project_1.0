@@ -10,57 +10,39 @@
 	<link href="css/style_2.css" rel="stylesheet">
 	<link href="css/post-layout.css" rel="stylesheet">
 	<link href="css/menu-layout.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/main-menu-style.css" charset="utf-8">
 </head>
 <body>
 
-<nav class="cn navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-screenshot"></span></a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
+	<div class="menu">
+		<div class="menu-open-tag">
+			<span class=" glyphicon glyphicon-option-horizontal"></span>
+		</div>
+		<div class="menu-brand">
+			<span class="glyphicon glyphicon-subscript"></span>
+		</div>
+		<div class="main-menu">
+			<ul class="menu-item">
+				<li class="item"><a href="#"><span class="icon glyphicon glyphicon-search"></span><span class="menu-text">Search</span></a></li>
+				<li class="item" ><a class="dropdown" id="modal1" href="#"><span class="icon glyphicon glyphicon-download-alt"></span><span class="menu-text">Download <span class="glyphicon glyphicon-plus"></span></span></a></li>
+				<ul class="modal1 dropdown-item">
+					<a href="home.html"><li><span class="icon glyphicon glyphicon-download-alt"></span><span class="menu-text">Download</span></li></a>
+					<a href="#"><li><span class="icon glyphicon glyphicon-download-alt"></span><span class="menu-text">Download</span></li></a>
+					<a href="#"><li><span class="icon glyphicon glyphicon-download-alt"></span><span class="menu-text">Download</span></li></a>
+				</ul>
+				<li class="item"><a href="#"><span class="icon glyphicon glyphicon-home"></span><span class="menu-text">Home</span></a></li>
+				<li class="item"><a class="dropdown" id="modal2" href="#"><span class="icon glyphicon glyphicon-download-alt"></span><span class="menu-text">Download <span class="glyphicon glyphicon-plus"></span></span></a></li>
+				<ul class="modal2 dropdown-item">
+					<a href="#"><li><span class="icon glyphicon glyphicon-download-alt"></span><span class="menu-text">Downldad</span></li></a>
+					<a href="#"><li><span class="icon glyphicon glyphicon-download-alt"></span><span class="menu-text">Downldad</span></li></a>
+					<a href="#"><li><span class="icon glyphicon glyphicon-download-alt"></span><span class="menu-text">Downldad</span></li></a>
+					<a href="#"><li><span class="icon glyphicon glyphicon-download-alt"></span><span class="menu-text">Downldad</span></li></a>
+					<a href="#"><li><span class="icon glyphicon glyphicon-download-alt"></span><span class="menu-text">Downldad</span></li></a>
+				</ul>
+				<li class="item"><a href="#"><span class="icon glyphicon glyphicon-cog"></span><span class="menu-text">Settings</span></a></li>
+			</ul>
+		</div>
+	</div>
 
 <div class="menu-side col-lg-1 col-sm-1">
 	<div class="menu-side-toggle"></div>
@@ -257,6 +239,7 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src='js/masonry.pkgd.min.js'></script>
 	<script src="js/index.js" charset="utf-8"></script>
+	<script src="js/menu-actions.js" charset="utf-8"></script>
 	<script type="text/javascript">
 	document.onscroll = function() {myFunction()};
 	function myFunction() {
